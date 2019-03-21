@@ -6,8 +6,10 @@ conocimiento<-factor(datos$conocimiento)
 is.factor(conocimiento)
 retro<-factor(datos$retro)
 is.factor(retro)
+comuna<-factor(datos$comuna)
+is.factor(comuna)
 
 ###########Generar modelo full######################
 
-modelofull<-lm(datos$compra~datos$edad++sexo+datos$motor+conocimiento+datos$busquedas+retro+datos$fiamarca+datos$tipocompra+datos$estructuraweb)
+modelofull<-lm(datos$compra~datos$edad++sexo+comuna+datos$motor+conocimiento+datos$busquedas+retro+datos$fiamarca+datos$tipocompra+datos$estructuraweb)
 summary(modelofull)
