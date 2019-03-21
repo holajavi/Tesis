@@ -1,2 +1,2 @@
-modelo <- lm(Compra ~ Busquedas, data = DATOS)
-Summary(modelo)
+modelo <- lm(Compra~Busquedas+Retroalimentacion+Tipocompra, data = DATOS)
+summary(modelo)
