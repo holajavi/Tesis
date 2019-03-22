@@ -14,14 +14,16 @@
 
 Principal Component
 
-attach(BaseDatos)
+>attach(BaseDatos)
 
 ##preprocesamiento de datos##
 
-boxplot()
-hist()
-summary()
-pairs()
+>boxplot()
+>hist()
+>summary()
+>pairs()
 
 ##Correlacion de variables##
-cor(BaseDatos)
+>cor(BaseDatos)
+
+>round(cor(BaseDatos), 5)
