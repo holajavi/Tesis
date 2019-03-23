@@ -1,11 +1,3 @@
-attach(datos)
-##preprocesamiento de datos##
-
-boxplot()
-hist()
-summary()
-pairs()
-
 ##Correlacion de variables##
 cor(datos)
 
@@ -16,3 +8,17 @@ guardaResultados <- round(cor(datos))
 
 datos.pca<-prcomp(datos, scale=TRUE)
 guardaResultados <- datos.pca
+
+summary(datos.pca)
+media<-datos.pca$center
+desvstandar<-datos.pca$scale
+
+cor(compra, sexo)
+
+sexo<-datos$sexo
+compra<-datos$compra
+cor(compra, sexo)
+
+
+plot(compra, sexo)
+
