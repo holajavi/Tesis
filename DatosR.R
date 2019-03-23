@@ -10,7 +10,7 @@ is.factor(retro)
 
 ###########Generar modelo full######################
 
-modelofull<-lm(datos$compra~datos$edad++sexo+datos$motor+conocimiento+datos$busquedas+retro+datos$fiamarca+datos$tipocompra+datos$estructuraweb)
+modelofull<-lm(datos$compra~datos$edad+sexo+datos$comuna+datos$buscador+datos$retro1+datos$busqueda+datos$cono1+datos$cono2+datos$cono3+datos$fiamarc+datos$retro2+datos$retro3+datos$retro4+datos$tipocompra+datos$estructuraweb)
 summary(modelofull)
 
-guardaResultados<-lm(datos$compra~datos$edad++sexo+comuna+datos$motor+conocimiento+datos$busquedas+retro+datos$fiamarca+datos$tipocompra+datos$estructuraweb)
+
